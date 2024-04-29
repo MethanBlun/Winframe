@@ -5,13 +5,13 @@ const App = () => {
   return (
     <div className="relative h-screen">
       {/* Première partie */}
-      <div className="absolute top-0 left-0 h-full w-1/3 bg-red-500">dashbord</div>
+      <div className="absolute top-0 left-0 h-full w-1/4 bg-red-300">dashbord</div>
 
       {/* Deuxième partie */}
-      <div className="absolute top-0 right-0 h-1/3 w-2/3 bg-blue-500">c</div>
+      <div className="absolute top-0 right-0 h-1/3 w-3/4 bg-blue-300">c</div>
 
       {/* Troisième partie */}
-      <div className="absolute top-40 left-1/3 w-2/3 h-2/3 bg-green-500">task manager</div>
+      <div className="absolute top-1/4 left-1/3 w-2/3 h-2/4 bg-cyan-300">task manager</div>
 
       {/* Footer */}
       <footer className="fixed bottom-0 left-0 w-full bg-gray-500">

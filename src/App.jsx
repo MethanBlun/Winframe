@@ -1,4 +1,6 @@
 import React from "react";
+import quote from "./quoteGenerator";
+import Quote from "./quoteGenerator";
 
 const App = () => {
   return (
@@ -7,7 +9,7 @@ const App = () => {
         dashbord
       </div>
       <div className="absolute top-0 right-0 h-1/4 w-4/5 bg-blue-300">
-        Quote area
+        <Quote/>
       </div>
       <div className="absolute bottom-0 right-0 h-4/5 w-4/5 bg-cyan-300">
         task area

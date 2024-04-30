@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Todolist() {
   return (
-    <div  className=" flex items-start justify-center bg-slate-400 h-full w-full">
-      <form className="   p-9  " onSubmit={null}>
+    <div className=" flex items-start justify-center bg-slate-400 h-full w-full">
+      <form className="p-9 flex flex-row gap-3" onSubmit={null}>
         <div>
-          <label htmlFor="item">New Item</label>
+          <label className=" p-2" htmlFor="item">New Item</label>
           <input
           //   value={newItem}
           //   onChange={e => setNewItem(e.target.value)}
@@ -14,7 +14,7 @@ export default function Todolist() {
           />
         </div>
 
-        <button className="  ">Add</button>
+        <button  className="  ">Add</button>
       </form>
     </div>
   );

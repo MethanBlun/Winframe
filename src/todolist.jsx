@@ -1,20 +1,17 @@
 import React from "react";
-
+import {Button} from "@nextui-org/react";
+import {Input} from "@nextui-org/react";
 export default function Todolist() {
   return (
     <div className=" flex items-start justify-center bg-slate-400 h-full w-full">
       <form className="p-9 flex flex-row gap-3" onSubmit={null}>
         <div>
-          <label className=" p-2" htmlFor="item">New Item</label>
-          <input
-          //   value={newItem}
-          //   onChange={e => setNewItem(e.target.value)}
-          //   type="text"
-          //   id="item"
-          />
+          <label className=" p-2 text-slate-100" htmlFor="item"></label>
+
+            <Input type="text"></Input>
         </div>
 
-        <button  className="  ">Add</button>
+        <Button  className="h-7  bg-teal-800"> Add </Button>
       </form>
     </div>
   );

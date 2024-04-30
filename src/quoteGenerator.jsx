@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 function Quote() {
-  const [quote, setQuote] = useState("    life is grim");
+  const [quote, setQuote] = useState("life is grim");
   // const quotes = [{
   //     quote1 :'life is better with a cat'
   // },{
@@ -10,7 +10,7 @@ function Quote() {
   // }]s
 
   return (
-    <div className="flex justify-center bg-slate-700 p-5 ">
+    <div className="flex justify-center h-full w-full bg-slate-700  ">
       <div className=" text-slate-100">citation du jour :</div>
       <div>{quote}</div>
     </div>

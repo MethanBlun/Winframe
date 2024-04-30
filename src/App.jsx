@@ -1,5 +1,4 @@
 import React from "react";
-import quote from "./quoteGenerator";
 import Quote from "./quoteGenerator";
 
 const App = () => {
@@ -11,7 +10,7 @@ const App = () => {
       <div className="absolute top-0 right-0 h-1/4 w-4/5">
         <Quote/>
       </div>
-      <div className="absolute bottom-0 right-0 h-4/5 w-4/5 bg-cyan-300">
+      <div className="absolute bottom-0 right-0 h-4/5 w-4/5 bg-slate-400">
         
       </div>
       task area

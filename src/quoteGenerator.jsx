@@ -10,9 +10,9 @@ function Quote() {
   // }]s
 
   return (
-    <div className="flex justify-center h-full w-full bg-slate-700  ">
-      <div className=" text-slate-100">citation du jour :</div>
-      <div>{quote}</div>
+    <div className="flex justify-center h-full p-10  w-full bg-slate-700  ">
+      <div className=" text-zinc-300">citation du jour  </div>
+      <div className="text-zinc-300">{quote}</div>
     </div>
   );
 }

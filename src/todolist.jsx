@@ -9,10 +9,10 @@ export default function Todolist() {
         className="p-7 m-5 w-full border-3 border-slate-900 rounded-xl"
         onSubmit={null}
       >
-        <div className="flex items-center justify-between">
-          <label className="text-slate-100" htmlFor="item"></label>
+        <div className="flex gap-3 items-center justify-between">
+          
           <div className="flex-grow">
-            <Input className="w-full" type="text"></Input>
+            <Input className="w-full " type="text"></Input>
           </div>
           <Button className="h-10 bg-slate-200"> Add </Button>
         </div>

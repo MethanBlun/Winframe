@@ -7,10 +7,18 @@ export default function Todolist() {
   const [task,setTask]= useState('')
 
 
-  function getTask(event){
-    const task = event.target.value
-      setTask(task)
-      console.log(task)
+  // function getTask(event){
+  //   const task = event.target.value
+  //     setTask(task)
+  //     console.log(task)
+  // }
+  function handleInputChange(event) {
+    const value = event.target.value;
+    setTask(value);
+  }
+
+  function handleButtonClick() {
+    console.log(task);
   }
   return (
     <div className="flex items-start justify-center bg-slate-400 h-full w-full">
@@ -21,9 +29,9 @@ export default function Todolist() {
         <div className="flex gap-3 h-5 items-center justify-between">
           
           <div className="flex-grow">
-            <Input className="w-full" onChange={getTask} type="text"></Input>
+            <Input className="w-full" onChange={handleInputChange} type="text"></Input>
           </div>
-          <Button className="h-10 bg-slate-200"> Add </Button>
+          <Button onClick={handleButtonClick} className="h-10 bg-slate-200"> Add </Button>
         </div>
       </form>
     </div>

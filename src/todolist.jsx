@@ -12,7 +12,7 @@ export default function Todolist() {
         <div className="flex gap-3 h-5 items-center justify-between">
           
           <div className="flex-grow">
-            <Input className="w-full" onChange={alert('i works')} type="text"></Input>
+            <Input className="w-full"  type="text"></Input>
           </div>
           <Button className="h-10 bg-slate-200"> Add </Button>
         </div>

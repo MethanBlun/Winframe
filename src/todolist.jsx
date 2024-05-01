@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "@nextui-org/react";
 import { Input } from "@nextui-org/react";
 
 export default function Todolist() {
 
+  const [task,setTask]= useState('')
 
 
-
-  function getTask({target}){
-    const {task} = target.value
-    console.log(task)
+  function getTask(event){
+    const task = event.target.value
+      setTask(task)
+      console.log(task)
   }
   return (
     <div className="flex items-start justify-center bg-slate-400 h-full w-full">

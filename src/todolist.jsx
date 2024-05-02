@@ -5,11 +5,7 @@ import { Input } from "@nextui-org/react";
 export default function Todolist() {
   const [task, setTask] = useState("");
 
-  // function getTask(event){
-  //   const task = event.target.value
-  //     setTask(task)
-  //     console.log(task)
-  // }
+
   function handleInputChange(event) {
     const value = event.target.value;
 
@@ -20,7 +16,10 @@ export default function Todolist() {
     console.log(task);
   }
   return (
-    <div className="flex items-start justify-center bg-slate-400 h-full w-full">
+    <div className="h-full bg-orange-600">
+
+   
+    <div className="flex items-start justify-center bg-slate-400 h-/4 w-full">
       <form
         className="p-7 m-5 w-full border-3 border-slate-900 rounded-2xl"
         onSubmit={null}
@@ -39,6 +38,8 @@ export default function Todolist() {
           </Button>
         </div>
       </form>
+      
     </div>
+     </div>
   );
 }

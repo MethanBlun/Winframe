@@ -3,9 +3,7 @@ import { Button } from "@nextui-org/react";
 import { Input } from "@nextui-org/react";
 
 export default function Todolist() {
-
-  const [task,setTask]= useState('')
-
+  const [task, setTask] = useState("");
 
   // function getTask(event){
   //   const task = event.target.value
@@ -14,6 +12,7 @@ export default function Todolist() {
   // }
   function handleInputChange(event) {
     const value = event.target.value;
+
     setTask(value);
   }
 
@@ -26,12 +25,18 @@ export default function Todolist() {
         className="p-7 m-5 w-full border-3 border-slate-900 rounded-2xl"
         onSubmit={null}
       >
-        <div className="flex gap-3 h-5 items-center justify-between">
-          
+        <div className="flex gap-3 h-2 items-center justify-between">
           <div className="flex-grow">
-            <Input className="w-full" onChange={handleInputChange} type="text"></Input>
+            <Input
+              className="w-full"
+              onChange={handleInputChange}
+              type="text"
+            ></Input>
           </div>
-          <Button onClick={handleButtonClick} className="h-10 bg-slate-200"> Add </Button>
+          <Button onClick={handleButtonClick} className="h-10 bg-slate-200">
+            {" "}
+            Add{" "}
+          </Button>
         </div>
       </form>
     </div>

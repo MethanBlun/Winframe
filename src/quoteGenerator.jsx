@@ -2,8 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 
 function Quote() {
-   const [quote, setQuote] = useState("hello world");
-
+  const [quote, setQuote] = useState("hello world");
 
   useEffect(() => {
     const quotes = [

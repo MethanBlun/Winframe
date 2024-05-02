@@ -13,9 +13,10 @@ export default function Todolist() {
 
   function handleButtonClick() {
     console.log(task);
+    setTask('')
   }
   return (
-    <div className="h-full flex flex-col bg-orange-600">
+    <div className="h-full flex flex-col">
       <div className="flex items-start justify-center bg-slate-400 h-/4 w-full">
         <form
           className="p-7 m-5 w-full border-3 border-slate-900 rounded-2xl"
@@ -37,7 +38,7 @@ export default function Todolist() {
         </form>
       </div>
       <ul className=" bg-slate-100 w-full h/4/5">
-
+            <li>hit the road jack</li>
       </ul>
     </div>
   );

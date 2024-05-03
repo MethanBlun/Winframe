@@ -59,10 +59,15 @@ export default function Todolist() {
   }
 
   function handleButtonClick() {
-    // Ajoute la nouvelle tâche à la liste des tâches
-    setTasks(prevTasks => [...prevTasks, task]);
-    // Réinitialise la valeur de l'entrée
-    setTask("");
+    if (task){
+       setTasks(prevTasks => [...prevTasks, task]);
+        setTask("");
+    }else{
+      alert('veiller mettre quelque chose dans champs de saisi')
+    }
+  
+    
+   
   }
 
   return (
@@ -71,8 +76,8 @@ export default function Todolist() {
         <form
           className="p-7 m-5 w-full border-3 border-slate-900 rounded-2xl"
           onSubmit={event => {
-            event.preventDefault(); // Empêche le rechargement de la page lors de la soumission du formulaire
-            handleButtonClick(); // Appelle la fonction pour ajouter la tâche
+          event.preventDefault();
+            handleButtonClick(); 
           }}
         >
           <div className="flex gap-3 h-2 items-center justify-between">

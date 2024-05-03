@@ -66,7 +66,7 @@ export default function Todolist() {
   }
 
   return (
-    <div className="h-full flex flex-col bg-orange-600">
+    <div className="h-full flex flex-col  bg-slate-200">
       <div className="flex items-start justify-center bg-slate-400 h-/4 w-full">
         <form
           className="p-7 m-5 w-full border-3 border-slate-900 rounded-2xl"
@@ -91,9 +91,9 @@ export default function Todolist() {
           </div>
         </form>
       </div>
-      <ol className="bg-slate-100 w-full h/4/5">
+      <ol className=" p-2 w-full h/4/5">
         {tasks.map((task, index) => (
-          <li key={index}>{task}</li>
+          <li className=" border-1 p-2  text-center border-black" key={index}>{task}</li>
         ))}
       </ol>
     </div>

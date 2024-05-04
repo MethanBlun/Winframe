@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Quote from "./quoteGenerator";
 import Todolist from "./todolist";
 import Dashbord from "./dashbord";

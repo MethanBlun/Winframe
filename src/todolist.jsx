@@ -66,13 +66,13 @@ export default function Todolist() {
       alert("veiller mettre quelque chose dans le champs de saisi");
     }
   }
-  function handleDelete(id) {
-    setTasks((prevTasks) => {
-      return prevTasks.filter((t) => t.id !== id);
-      //comment supprimer une tache specifique parmis des taches
-      //est ce que je gere bien les id?
+  function handleDelete(index) {
+    // setTasks((prevTasks) => {
+    //   return prevTasks.filter((t) => t.id !== id);
+    //   //comment supprimer une tache specifique parmis des taches
+    //   //est ce que je gere bien les id?
     
-    });
+    // });
 
   }
   function handleDone(){
@@ -106,11 +106,11 @@ export default function Todolist() {
         </form>
       </div>
       <ul className=" flex flex-col-reverse p-2 w-full h/4/5">
-        {tasks.map((task,id=crypto.randomUUID) => (
-          <div className="flex gap-1" key={id}>
+        {tasks.map((task,index) => (
+          <div className="flex gap-1" key={index}>
             <li
               className=" border-1 p-2  m-2 rounded-lg  w-4/5 text-center border-black"
-              key={id}
+              key={index}
             >
               {task}
             </li>

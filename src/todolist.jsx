@@ -20,7 +20,7 @@
 //           className="p-7 m-5 w-full border-3 border-slate-900 rounded-2xl"
 //           onSubmit={(event) => {
 //             event.preventDefault(); // forbed the refresh of page after submit
-//             handleButtonClick(); 
+//             handleButtonClick();
 //           }}
 //         >
 //           <div className="flex gap-3 h-2 items-center justify-between">
@@ -59,15 +59,12 @@ export default function Todolist() {
   }
 
   function handleButtonClick() {
-    if (task){
-       setTasks(prevTasks => [...prevTasks, task]);
-        setTask("");
-    }else{
-      alert('veiller mettre quelque chose dans champs de saisi')
+    if (task) {
+      setTasks((prevTasks) => [...prevTasks, task]);
+      setTask("");
+    } else {
+      alert("veiller mettre quelque chose dans champs de saisi");
     }
-  
-    
-   
   }
 
   return (
@@ -75,9 +72,9 @@ export default function Todolist() {
       <div className="flex items-start justify-center bg-slate-400 h-/4 w-full">
         <form
           className="p-7 m-5 w-full border-3 border-slate-900 rounded-2xl"
-          onSubmit={event => {
-          event.preventDefault();
-            handleButtonClick(); 
+          onSubmit={(event) => {
+            event.preventDefault();
+            handleButtonClick();
           }}
         >
           <div className="flex gap-3 h-2 items-center justify-between">
@@ -96,9 +93,14 @@ export default function Todolist() {
           </div>
         </form>
       </div>
-      <ol className=" p-2 w-full h/4/5">
+      <ol className=" flex flex-col-reverse p-2 w-full h/4/5">
         {tasks.map((task, index) => (
-          <li className=" border-1 p-2  text-center border-black" key={index}>{task}</li>
+          <li
+            className=" border-1 p-2  m-2 rounded-lg  w-4/5 text-center border-black"
+            key={index}
+          >
+            {task}
+          </li>
         ))}
       </ol>
     </div>

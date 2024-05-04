@@ -141,7 +141,7 @@ export default function Todolist() {
           </div>
         </form>
       </div>
-      <ul className="flex flex-col p-2 w-full h-3/4 overflow-y-auto flex-grow"> {/* Added flex-grow to position the list at top */}
+      <ul className="flex flex-col p-2 w-full h-3/4 overflow-y-auto flex-grow"> 
         {tasks.map((task, index) => (
           <li
             key={index}

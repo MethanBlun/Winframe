@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 
 export default function Todolist() {
@@ -57,7 +55,7 @@ export default function Todolist() {
           </div>
         </form>
       </div>
-      <ul className="flex flex-col-reverse p-2 pb-14 w-full h-3/4 overflow-y-auto flex-grow"> 
+      <ul className="flex flex-col-reverse p-2 pb-14 w-full h-3/4 overflow-y-auto flex-grow">
         {tasks.map((task, index) => (
           <li
             key={index}
@@ -81,7 +79,6 @@ export default function Todolist() {
           </li>
         ))}
       </ul>
-      
     </div>
   );
 }

@@ -67,15 +67,18 @@ export default function Todolist() {
     }
   }
   function handleDelete(id) {
-    // setTasks((prevTasks) => {
-    //   return prevTasks.filter((task) => task.index !== index);
-    // });
+    setTasks((prevTasks) => {
+      return prevTasks.filter((task) => task.id !== id);
+    });
     console.log(`my index is ${id}` )
     // function deleteTodo(id) {
     //   setTodos((currentTodos) => {
     //     return currentTodos.filter((todo) => todo.id !== id);
     //   });
     // }
+  }
+  function handleDone(){
+    alert(`congratulation tu as achever 1 tache sur ${tasks.length}`)
   }
 
   return (
@@ -114,14 +117,15 @@ export default function Todolist() {
               {task}
             </li>
             {
-              <button className=" border p-2  m-2 border-black bg-green-600 rounded-lg">
+              <button onClick={handleDone}
+              className=" border p-2  m-2 border-black bg-green-400 rounded-lg">
                 done
               </button>
             }
             {
               <button
                 onClick={handleDelete}
-                className=" border p-1  m-2 border-black bg-red-800 rounded-lg"
+                className=" border p-1  m-2 border-black bg-red-600 rounded-lg"
               >
                 Delete
               </button>

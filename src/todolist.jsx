@@ -102,7 +102,8 @@ export default function Todolist() {
           >
             {task}
           </li>
-          { <button className=" border p-2  m-2 border-black rounded-lg">hello</button> }
+          { <button className=" border p-2  m-2 border-black bg-green-600 rounded-lg">done</button> }
+          {<button className=" border p-1  m-2 border-black bg-red-800 rounded-lg">Delete</button> }
           </div>
           
 

@@ -46,7 +46,7 @@
 // }
 
 import React, { useState } from "react";
-import { Button, button } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 import { Input } from "@nextui-org/react";
 
 export default function Todolist() {
@@ -68,14 +68,12 @@ export default function Todolist() {
   }
   function handleDelete(id) {
     setTasks((prevTasks) => {
-      return prevTasks.filter((task) => task.id !== id);
+      return prevTasks.filter((t) => t.id !== id);
+      //comment supprimer une tache specifique parmis des taches
+      //est ce que je gere bien les id?
+    
     });
-    console.log(`my index is ${id}` )
-    // function deleteTodo(id) {
-    //   setTodos((currentTodos) => {
-    //     return currentTodos.filter((todo) => todo.id !== id);
-    //   });
-    // }
+
   }
   function handleDone(){
     alert(`congratulation tu as achever 1 tache sur ${tasks.length}`)

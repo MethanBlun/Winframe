@@ -46,7 +46,7 @@
 // }
 
 import React, { useState } from "react";
-import { Button } from "@nextui-org/react";
+import { Button, button } from "@nextui-org/react";
 import { Input } from "@nextui-org/react";
 
 export default function Todolist() {
@@ -63,7 +63,7 @@ export default function Todolist() {
       setTasks((prevTasks) => [...prevTasks, task]);
       setTask("");
     } else {
-      alert("veiller mettre quelque chose dans champs de saisi");
+      alert("veiller mettre quelque chose dans le champs de saisi");
     }
   }
 
@@ -93,16 +93,21 @@ export default function Todolist() {
           </div>
         </form>
       </div>
-      <ol className=" flex flex-col-reverse p-2 w-full h/4/5">
+      <ul className=" flex flex-col-reverse p-2 w-full h/4/5">
         {tasks.map((task, index) => (
-          <li
+          <div className="flex gap-1" key={index}>
+            <li
             className=" border-1 p-2  m-2 rounded-lg  w-4/5 text-center border-black"
             key={index}
           >
             {task}
           </li>
+          { <button className=" border p-2  m-2 border-black rounded-lg">hello</button> }
+          </div>
+          
+
         ))}
-      </ol>
+      </ul>
     </div>
   );
 }

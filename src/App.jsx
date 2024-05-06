@@ -9,7 +9,7 @@ const App = () => {
       <div className="absolute  top-0 left-0 h-full w-1/5 bg-slate-300 rounded-sm">
       <Dashbord/>
       </div>
-      <div className="absolute top-0 right-0 h-1/4 w-4/5">
+      <div className="absolute pb-2 right-0 h-1/4 w-4/5">
         <Quote />
       </div>
       <div className="absolute bottom-0 right-0 h-4/5 w-4/5 bg-slate-400">

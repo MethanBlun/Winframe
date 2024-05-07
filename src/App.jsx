@@ -12,7 +12,7 @@ const App = () => {
       <div className="absolute pb-2 right-0 h-1/4 w-4/5">
         <Quote />
       </div>
-      <div className="absolute bottom-0 right-0 h-4/5 w-4/5 bg-slate-400">
+      <div className="absolute bottom-0 right-0 h-4/5 w-4/5 sm:bg-red-500 md:bg-green-500 lg:bg-yellow-500">
         <Todolist />
       </div>
 

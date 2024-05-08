@@ -1,15 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-//faire le style
-//mettre une boutons hidden en cas de besoins de switch
 
-//esssayer de tout reliier a supabase
-
-//et reveoyer des placeholders lors du clics des butons du dashbord
-
-//comment faire le mode sombre en tailwind
-//ou vais je mettre le boutton pour changer de theme
 
 function Quote() {
   const [quote, setQuote] = useState("default citation");

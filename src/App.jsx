@@ -18,7 +18,7 @@ const App = () => {
 
       <footer className="fixed bottom-0 left-0 w-full bg-slate-700">
         <div className="container mx-auto py-4">
-          <p className="text-center text-white">Footer</p>
+          <p className="text-center text-white">Footdder</p>
         </div>
       </footer>
     </div>

@@ -27,7 +27,7 @@ export default function Todolist() {
   }
 
   return (
-    <div className="h-full flex flex-col sm:bg-red-500 md:bg-green-500 lg:bg-yellow-500">
+    <div className="h-full flex flex-col ">
       <div className="flex items-center justify-center bg-slate-400 h-1/4 w-full">
         <form
           className="p-7 m-5 w-full border border-slate-900 rounded-2xl"

@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 function Quote() {
   const [quote, setQuote] = useState("default citation");
-  const [author, setAutor] = useState("No one");
+  const [author, setAutor] = useState("No ondvdvvde");
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -14,7 +14,7 @@ function Quote() {
         const rnd = Math.floor(Math.random() * json.length);
         setQuote(json[rnd].quote);
         setAutor(json[rnd].author);
-        console.log(quote, author);
+       
       } catch (error) {
         console.error("Erreur lors de la récupération des citations :", error);
       }
@@ -25,9 +25,9 @@ function Quote() {
 
   return (
     <>
-      <div className=" flex-auto  bg-slate-800">
-        <div className=" h-full  text-gray-50 ">{quote}</div>
-        <div className=" text-white">{author}</div>
+      <div className=" sm:(flex flex-col text-sm ) h-full bg-slate-800">
+        <div className="   text-gray-50 ">{quote}</div>
+        <div className=" p-1 text-white">{author}</div>
 
       </div>
     </>
